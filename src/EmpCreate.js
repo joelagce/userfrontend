@@ -29,7 +29,7 @@ const EmpCreate = () => {
       const empdata={id,name,lastName,MotherName,age,birthday,status,phone,country,state,municipality,city,cp,languaje,hobby,preferences};
       
 
-      fetch("http://localhost:3000/api/post/",{
+      fetch("https://userfrontend-4oq4.vercel.app/api/post/",{
         method:"POST",
         headers:{"content-type":"application/json"},
         body:JSON.stringify(empdata)

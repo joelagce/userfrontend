@@ -7,7 +7,7 @@ const EmpEdit = () => {
     //const [empdata, empdatachange] = useState({});
 
     useEffect(() => {
-        fetch("http://localhost:3000/api/post/" + empid).then((res) => {
+        fetch("https://userfrontend-4oq4.vercel.app/api/post/" + empid).then((res) => {
             return res.json();
         }).then((resp) => {
             idchange(resp.id);
@@ -58,7 +58,7 @@ const EmpEdit = () => {
       const empdata={id,name,lastName,MotherName,age,birthday,status,phone,country,state,municipality,city,cp,languaje,hobby,preferences};
       
 
-      fetch("http://localhost:3000/api/post/"+ empid,{
+      fetch("https://userfrontend-4oq4.vercel.app/api/post/"+ empid,{
         method:"PATCH",
         headers:{"content-type":"application/json"},
         body:JSON.stringify(empdata)
