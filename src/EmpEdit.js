@@ -125,7 +125,7 @@ const EmpEdit = () => {
           <div class="column">
             
             <input type="text" placeholder="Ingrese sus hobbies" required value={hobby} onChange={e=>setHobby(e.target.value)}/>
-            <input type="text" placeholder="Ingrese sus preferencias" required value={preferences} onChange={e=>setPreferences(e.target.value)}/>
+            <input type="text" placeholder="Estacion del año preferida" required value={preferences} onChange={e=>setPreferences(e.target.value)}/>
             <input type="text" placeholder="Ingrese su idioma" required value={languaje} onChange={e=>setLanguaje(e.target.value)}/>
 
           </div>

@@ -148,3 +148,13 @@ body{
 }
 
 }
+@media screen and (min-width: 1260px) {
+  
+  .wrapers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   column-gap: 2rem;
+  justify-content: center;
+}
+
+}
